@@ -1,0 +1,35 @@
+from machine import Pin
+import time
+
+pLED1 = Pin(1, Pin.OUT)    # create output pin on GPIO0
+pLED2 = Pin(2, Pin.OUT)
+pLED3 = Pin(3, Pin.OUT)
+pLED4 = Pin(4, Pin.OUT)
+while True:
+        pLED1.value(1)
+        time.sleep_ms(200)      # sleep for 200 milliseconds
+        print(pLED1.value())
+        pLED1.value(0)
+        time.sleep_ms(200)
+        print(pLED1.value())
+        
+        pLED2.value(1)
+        time.sleep_ms(200)      # sleep for 200 milliseconds
+        print(pLED2.value())
+        pLED2.value(0)
+        time.sleep_ms(200)
+        print(pLED2.value())
+        
+        pLED3.value(1)
+        time.sleep_ms(200)      # sleep for 200 milliseconds
+        print(pLED3.value())
+        pLED3.value(0)
+        time.sleep_ms(200)
+        print(pLED3.value())
+        
+        pLED4.value(1)
+        time.sleep_ms(200)      # sleep for 200 milliseconds
+        print(pLED3.value())
+        pLED4.value(0)
+        time.sleep_ms(200)
+        print(pLED1.value())
